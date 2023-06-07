@@ -1,4 +1,4 @@
-const fileProductos = "../data/producto.json"
+const urlProducto = "https://raw.githubusercontent.com/diiego710/zona-deportiva/main/data/producto.json"
 const menuHam = document.querySelector('#menu-ham');
 const enlaces = document.querySelector('.nav');
 const contenidoProductos = document.querySelector('#productos-home');
@@ -161,8 +161,8 @@ async function realizarPeticion(datos) {
 }
 
 async function renderizarProductos(){
-    const productos = await realizarPeticion(fileProductos);
-    
+    const productos = await realizarPeticion(urlProducto);
+
     productos.forEach((producto) => {
         const divCard = document.createElement('div');
         divCard.classList.add('card')
