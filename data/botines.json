@@ -1,0 +1,80 @@
+[
+    {
+        "id": 5,
+        "nombre": "Botines Nike Phantom Gx Club Fg Hombre",
+        "precio":34999,
+        "img": "../../img/botines/NIDD9483-446-1.jfif"
+    },
+
+    {
+        "id": 6,
+        "nombre": "Botines adidas Predator Accuracy.3 Fg",
+        "precio": 49999,
+        "img": "../../img/botines/adidas-predator.jfif"
+    },
+
+    {
+        "id": 7,
+        "nombre": "Botines Fútbol Puma Ultra Match Terreno Firme Hombre",
+        "precio": 43999,
+        "img": "../../img/botines/PU107438-01-1.jfif"
+    },
+
+    {
+        "id": 8,
+        "nombre": "Botines Nike Phantom Gt2 Elite Fg",
+        "precio": 134999,
+        "img": "../../img/botines/NI_CZ9890-407-1.jfif"
+    },
+    {
+        "id": 21,
+        "nombre": "Botines Topper San Ciro V Fg",
+        "precio":17699,
+        "img": "../../img/botines/TO_25911-1.jfif"
+    },
+
+    {
+        "id": 22,
+        "nombre": "Botines Puma Future Play Fg/Ag",
+        "precio": 31399,
+        "img": "../../img/botines/PU107433-01-1.jfif"
+    },
+
+    {
+        "id": 23,
+        "nombre": "Botines Nike Legend 9 Academy Fg/Mg Jr",
+        "precio": 29999,
+        "img": "../../img/botines/NI_DA1333-176-1.jfif"
+    },
+
+    {
+        "id": 24,
+        "nombre": "Botines adidas X Speedportal.3 Tf",
+        "precio": 49999,
+        "img": "../../img/botines/ADGZ2470-1.jfif"
+    },
+	{
+	    "id": 25,
+		"nombre": "Botines de Fútbol Topper Stingray Ii Mach 1 Fg",
+		"precio": 19.199,
+        "img": "../../img/botines/TO25966-1.jfif"
+	},
+	{
+	    "id": 26,
+		"nombre": "Botines Fútbol adidas X Speedportal.4 Terreno Firme Hombre",
+		"precio": 27299,
+        "img": "../../img/botines/ADGW8507-1.jfif"
+	},
+    {
+	    "id": 27,
+		"nombre": "Botines Puma Future Z 3.4 Fg/Ag Jr",
+		"precio": 20199,
+        "img": "../../img/botines/PU_107149-01-1.jfif"
+	},
+    {
+        "id": 28,
+        "nombre": "Botines adidas Copa Sense.4 Tf",
+        "precio": 27299,
+        "img": "../../img/botines/ADGZ1368-1.jfif"
+    }
+]

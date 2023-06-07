@@ -1,0 +1,74 @@
+[
+	{
+		"id": 9,
+		"nombre": "Short River Plate 2023",
+		"precio": 12000,
+		"img": "../../img/short/short-river.jpg"
+	},
+	{
+		"id": 10,
+		"nombre": "Short Seleccion Argentina 2023",
+		"precio": 13000,
+		"img": "../../img/short/short-argentina.jpg"
+	},
+	{
+		"id": 11,
+		"nombre": "Short Boca Juniors 2023",
+		"precio": 12000,
+		"img": "../../img/short/short-boca.jpg"
+	},
+	{
+		"id": 12,
+		"nombre": "Short Real Madrid 2022-23",
+		"precio": 11000,
+		"img": "../../img/short/short-realmadrid.jpg"
+	},
+    {
+        "id": 29,
+        "nombre": "Short Seleccion Alemania 2023",
+        "precio":12000,
+		"img": "../../img/short/short-alemania.jpg"
+    },
+    {
+        "id": 30,
+        "nombre": "Short Barcelona 2023",
+        "precio": 11000,
+		"img": "../../img/short/short-barcelona.jpg"
+    },
+    {
+        "id": 31,
+        "nombre": "Short Seleccion Brasil 2023",
+        "precio": 13000,
+		"img": "../../img/short/short-brasil.webp"
+    },
+    {
+        "id": 32,
+        "nombre": "Short Inter 2023",
+        "precio": 10000,
+		"img": "../../img/short/short-inter.jpg"
+    },
+    {
+        "id": 33,
+        "nombre": "Short Seleccion Italia 2023",
+        "precio": 13000,
+		"img": "../../img/short/short-italia.jpg"
+    },
+    {
+        "id": 34,
+        "nombre": "Short Liverpool 2022-23",
+        "precio": 11000,
+		"img": "../../img/short/short-liverpool.jpg"
+    },
+    {
+        "id": 35,
+        "nombre": "Short Manchester City 2022-23",
+        "precio": 12000,
+		"img": "../../img/short/short-manchester-city.webp"
+    },
+    {
+        "id": 36,
+        "nombre": "Short Racing 2022-23",
+        "precio": 11000,
+		"img": "../../img/short/short-racing.jpg"
+    }
+]
