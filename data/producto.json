@@ -3,7 +3,7 @@
 		"id": 1,
 		"nombre": "Camiseta seleccion Argentina Tres Estrellas",
 		"precio": 28000,
-		"img": "../../img/camisetas/argentina2023.webp"
+		"img": "../img/camisetas/argentina2023.webp"
 	},
 	{
 		"id": 2,
