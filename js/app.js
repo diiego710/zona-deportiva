@@ -1,4 +1,4 @@
-const urlProducto = "https://raw.githubusercontent.com/diiego710/zona-deportiva/main/data/producto.json"
+const file = 'https://raw.githubusercontent.com/diiego710/zona-deportiva/main/data/producto.json';
 const menuHam = document.querySelector('#menu-ham');
 const enlaces = document.querySelector('.nav');
 const contenidoProductos = document.querySelector('#productos-home');
@@ -93,7 +93,7 @@ function agregarAlCarrito(productoAgregar){
         const producto = productosCarrito.map((producto) => {
             if(producto.id === productoAgregar.id){
                 producto.cantidad++;
-                producto.subtotal = producto.cantidad * producto.precio;
+                producto.subtotal = producto.precio * producto.cantidad;
 
                 return producto;
             }else{
@@ -118,9 +118,9 @@ function mostrarProductosCarrito(){
         div.innerHTML = `
         <img src="${imagen}" width="100">
         <p>${nombre}</p>
-        <p>$${precio.toFixed(3)}</p>
+        <p>$${precio}</p>
         <p>${cantidad}</p>
-        <p>$${subtotal.toFixed(3)}</p>
+        <p>$${subtotal}</p>
         <a href="#" class="eliminar-producto" id="${id}"> X </a>
         `;
         ventanaBody.appendChild(div)
@@ -131,7 +131,7 @@ function mostrarProductosCarrito(){
 
 function calcularTotal(){
     let total = productosCarrito.reduce((sumaTotal, producto) => sumaTotal + producto.subtotal, 0 );
-    totalCompra.innerHTML = `Total: $${total.toFixed(3)}`;
+    totalCompra.innerHTML = `Total: $${total}`;
 }
 
 function limpiarCarrito(){
@@ -160,10 +160,12 @@ async function realizarPeticion(datos) {
     }
 }
 
-async function renderizarProductos(){
-    const productos = await realizarPeticion(urlProducto);
 
-    productos.forEach((producto) => {
+
+async function renderizarProductos(){
+    const productos = await realizarPeticion(file);
+
+    productos.forEach((producto) =>{
         const divCard = document.createElement('div');
         divCard.classList.add('card')
         divCard.innerHTML +=`

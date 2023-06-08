@@ -1,4 +1,4 @@
-const file = '../data/short.json'
+const file = 'https://raw.githubusercontent.com/diiego710/zona-deportiva/main/data/short.json'
 const menuHam = document.querySelector('#menu-ham');
 const enlaces = document.querySelector('.nav');
 const contenidoProductos = document.querySelector('#productos-home');
