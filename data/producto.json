@@ -9,68 +9,68 @@
 		"id": 2,
 		"nombre": "Camiseta Titular River Plate 2023",
 		"precio": 22000,
-		"img": "../../img/camisetas/river.webp"
+		"img": "../img/camisetas/river.webp"
 	},
 	{
 		"id": 3,
 		"nombre": "Camiseta Titular Boca Juniors 2023",
 		"precio": 22000,
-		"img": "../../img/camisetas/boca.webp"
+		"img": "../img/camisetas/boca.webp"
 	},
 	{
 		"id": 4,
 		"nombre": "Camiseta Titular Real Madrid 2022-23",
 		"precio": 22000,
-		"img": "../../img/camisetas/realmadrid.webp"
+		"img": "../img/camisetas/realmadrid.webp"
 	},
     {
         "id": 5,
         "nombre": "Botines Nike Phantom Gx Club Fg Hombre",
         "precio":34999,
-        "img": "../../img/botines/NIDD9483-446-1.jfif"
+        "img": "../img/botines/NIDD9483-446-1.jfif"
     },
 
     {
         "id": 6,
         "nombre": "Botines adidas Predator Accuracy.3 Fg",
         "precio": 49999,
-        "img": "../../img/botines/adidas-predator.jfif"
+        "img": "../img/botines/adidas-predator.jfif"
     },
 
 	{
 		"id": 7,
 		"nombre": "Botines Fútbol Puma Ultra Match Terreno Firme Hombre",
 		"precio": 38000,
-		"img": "../../img/botines/PU107438-01-1.jfif"
+		"img": "../img/botines/PU107438-01-1.jfif"
 	},
     {
         "id": 8,
         "nombre": "Botines Nike Phantom Gt2 Elite Fg",
         "precio": 134999,
-        "img": "../../img/botines/NI_CZ9890-407-1.jfif"
+        "img": "../img/botines/NI_CZ9890-407-1.jfif"
     },
 	{
 		"id": 9,
 		"nombre": "Short River Plate 2023",
 		"precio": 12000,
-		"img": "../../img/short/short-river.jpg"
+		"img": "../img/short/short-river.jpg"
 	},
 	{
 		"id": 10,
 		"nombre": "Short Seleccion Argentina 2023",
 		"precio": 13000,
-		"img": "../../img/short/short-argentina.jpg"
+		"img": "../img/short/short-argentina.jpg"
 	},
 	{
 		"id": 11,
 		"nombre": "Short Boca Juniors 2023",
 		"precio": 12000,
-		"img": "../../img/short/short-boca.jpg"
+		"img": "../img/short/short-boca.jpg"
 	},
 	{
 		"id": 12,
 		"nombre": "Short Real Madrid 2022-23",
 		"precio": 11000,
-		"img": "../../img/short/short-realmadrid.jpg"
+		"img": "../img/short/short-realmadrid.jpg"
 	}
 ]
