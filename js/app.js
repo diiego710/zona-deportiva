@@ -61,7 +61,6 @@ function eliminarProducto(e){
         productosCarrito = productosCarrito.filter((producto) => producto.id !== productoId);
         guardarProductosStorage();
         mostrarProductosCarrito()
-        console.log(productosCarrito);
     }
 }
 
@@ -80,9 +79,10 @@ function leerDatosProductos(producto){
         producto.querySelector('img').src,
         producto.querySelector('h4').textContent,
         Number(producto.querySelector('p').textContent.replace('$', '')),
-        parseInt(producto.querySelector('a').getAttribute('id')),
+        Number(producto.querySelector('a').getAttribute('id')),
      );
-     datosProducto.obtenerTotal;
+
+     datosProducto.obtenerTotal();
     agregarAlCarrito(datosProducto);
 }
 
@@ -90,7 +90,7 @@ function agregarAlCarrito(productoAgregar){
     const existeEnCarrito = productosCarrito.some((producto) => producto.id === productoAgregar.id);
 
     if(existeEnCarrito){
-        const producto = productosCarrito.map((producto) => {
+        const productos = productosCarrito.map((producto) => {
             if(producto.id === productoAgregar.id){
                 producto.cantidad++;
                 producto.subtotal = producto.precio * producto.cantidad;
@@ -99,7 +99,7 @@ function agregarAlCarrito(productoAgregar){
             }else{
                 return producto;
             }
-        }); productosCarrito = producto;
+        }); productosCarrito = productos;
     } else{
         productosCarrito.push(productoAgregar);
     }
@@ -109,7 +109,6 @@ function agregarAlCarrito(productoAgregar){
 
 function mostrarProductosCarrito(){
     limpiarCarrito();
-    
     productosCarrito.forEach((producto) =>{
         const {imagen, nombre, precio, cantidad, subtotal, id} = producto;
 
@@ -118,9 +117,9 @@ function mostrarProductosCarrito(){
         div.innerHTML = `
         <img src="${imagen}" width="100">
         <p>${nombre}</p>
-        <p>$${precio}</p>
+        <p>$${precio.toFixed(3)}</p>
         <p>${cantidad}</p>
-        <p>$${subtotal}</p>
+        <p>$${subtotal.toFixed(3)}</p>
         <a href="#" class="eliminar-producto" id="${id}"> X </a>
         `;
         ventanaBody.appendChild(div)
@@ -131,7 +130,7 @@ function mostrarProductosCarrito(){
 
 function calcularTotal(){
     let total = productosCarrito.reduce((sumaTotal, producto) => sumaTotal + producto.subtotal, 0 );
-    totalCompra.innerHTML = `Total: $${total}`;
+    totalCompra.innerHTML = `Total: $${total.toFixed(3)}`;
 }
 
 function limpiarCarrito(){
