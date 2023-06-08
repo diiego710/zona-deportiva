@@ -82,7 +82,7 @@ function leerDatosProductos(producto){
         Number(producto.querySelector('p').textContent.replace('$', '')),
         parseInt(producto.querySelector('a').getAttribute('id')),
      );
-     datosProducto.obtenerTotal;
+     datosProducto.obtenerTotal();
     agregarAlCarrito(datosProducto);
 }
 
