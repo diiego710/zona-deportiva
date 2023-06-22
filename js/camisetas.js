@@ -109,23 +109,27 @@ function agregarAlCarrito(productoAgregar){
 
 function mostrarProductosCarrito(){
     limpiarCarrito();
-    
     productosCarrito.forEach((producto) =>{
         const {imagen, nombre, precio, cantidad, subtotal, id} = producto;
 
         const div = document.createElement('div');
-        div.classList.add('contenedor-producto');
-        div.innerHTML = `
-        <img src="${imagen}" width="100">
-        <p>${nombre}</p>
-        <p>$${precio.toFixed(3)}</p>
-        <p>${cantidad}</p>
-        <p>$${subtotal.toFixed(3)}</p>
-        <a href="#" class="eliminar-producto" id="${id}"> X </a>
-        `;
-        ventanaBody.appendChild(div)
+    div.classList.add('contenedor-producto');
+    div.innerHTML = `
+      <img src="${imagen}" width="100">
+      <div class="contenido-descripcion">
+        <div class="contenido-parrafo">
+            <p>${nombre}</p>
+            <p>Precio Unitario: $${precio.toFixed(3)}</p>
+            <p>Cantidad: ${cantidad}</p>
+            <p>Precio Total: $${subtotal.toFixed(3)}</p>
+        </div>
+        <div class="boton">
+            <a href="#" class="eliminar-producto" id="${id}"> X </a>
+        </div>
+      </div>
+    `;
+    ventanaBody.appendChild(div)
     });
-
     calcularTotal();
 }
 

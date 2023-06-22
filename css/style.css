@@ -68,6 +68,9 @@ img {
     color: #fff;
   }
 .bg-color {
+    width: 100%;
+    position: fixed;
+    z-index: 50;
     background-color: var(--primario)
 }
 
@@ -226,18 +229,31 @@ from {
     color: var(--secundario);
 }
 
-.contenedor-producto, .contenedor-datos {
+.contenedor-producto{
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    align-items: center;
-    gap: 2rem;
-    text-align: center;
-    margin: 1.5rem;
+    grid-template-columns: 20% 80%;
+    align-content: center;
+    margin: 2rem;
 }
 
-.contenedor-producto img{
-    width: auto;
+.contenido-descripcion{
+    display: grid;
+    grid-template-columns: 90% 10%;
 }
+
+.contenido-parrafo{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+}
+
+.boton{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 .eliminar-producto{
     font-weight: bold;
@@ -265,6 +281,7 @@ from {
 }
 
 .banner img{
+    margin-top: 7rem;
     width: 100%;
 }
 
@@ -326,7 +343,6 @@ from {
 }
 .banner-camiseta{
     background-image: url(../img/camiseta-adidas-river-plate-2022-23-h.jpg);
-
 }
 
 .banner-botines{
