@@ -45,7 +45,7 @@ img {
     margin: 0 auto;
 }
 
-.heading-titulo{
+.heading-titulo {
     padding: 1.5rem;
     font-family: var(--fuenteHeading);
     font-size: 4rem;
@@ -61,12 +61,13 @@ img {
     margin: 2rem;
     transition: all 0.3s;
     border: 1px rgb(20, 20, 47) solid;
-  }
+}
 
 .boton__carrito:hover {
     background-color: rgb(20, 20, 47);
     color: #fff;
-  }
+}
+
 .bg-color {
     width: 100%;
     position: fixed;
@@ -74,7 +75,7 @@ img {
     background-color: var(--primario)
 }
 
-.header{
+.header {
     display: grid;
     grid-template-columns: 15% 80% 5%;
     justify-content: space-between;
@@ -83,103 +84,119 @@ img {
 }
 
 /* Tamaño del logo */
-.logo img{
+.logo img {
     width: 18rem;
 }
 
 /* nav */
 
-.nav{
+.nav {
     grid-column: 2/3;
     grid-row: 1/2;
-    text-align:center ;
+    text-align: center;
     width: 100%;
 }
+
 .nav a {
     font-size: 2rem;
     margin: 2rem;
     padding: 2rem;
     width: 100%;
-    transition: .2s all ease-in ;
+    transition: .2s all ease-in;
 }
 
-.nav a:hover{
+.nav a:hover {
     border-radius: 10px;
     background-color: var(--primario-hov);
 }
 
 /* Icono del carrito */
+
 .icono-carrito i {
     text-align: end;
     grid-column: 3/4;
     color: var(--blanco);
     font-size: 3rem;
-    transition: .2s all ease-in ;
+    transition: .2s all ease-in;
 }
 
-.icono-carrito:hover i{
+.icono-carrito:hover i {
     cursor: pointer;
     color: var(--secundario);
 }
 
+.contador-productos {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    background-color: white;
+    border-radius: 1rem;
+    border: 1px #000000 solid;
+    margin-top: -17px;
+    width: 3rem;
+    padding: 5px;
+}
 
 /* Barra Hamburguesa */
-.ham{
+.ham {
     display: none;
-    background-color:transparent;
+    background-color: transparent;
     cursor: pointer;
-    border:none;
-    margin:0;
-    padding:0;
-    }
+    border: none;
+    margin: 0;
+    padding: 0;
+}
 
-.ham span{
+.ham span {
     background-color: var(--blanco);
-    display:block;
-    height:3px;
+    display: block;
+    height: 3px;
     width: 28px;
-    margin:5px auto;
-    border-radius:2px;    
+    margin: 5px auto;
+    border-radius: 2px;
 }
 
 
 /* Menu Responsive */
-@media (max-width:771px){
+@media (max-width:771px) {
 
-    .header{
+    .header {
         display: flex;
         flex-direction: column;
     }
-     .nav{
+
+    .nav {
         display: none;
         align-items: center;
         flex-direction: column;
-     }
-     .nav a{
-        margin: 0;
-     }
+    }
 
-    .ham{
+    .nav a {
+        margin: 0;
+    }
+
+    .ham {
         position: absolute;
         top: 24px;
         left: 20px;
         display: block;
     }
 
-    .icono-carrito{
+    .icono-carrito {
         position: absolute;
         top: 24px;
         right: 20px;
     }
 }
 
-.nav.activado{
+.nav.activado {
     display: flex;
 }
 
 /* Ventana Carrito */
 
-.carrito-card{
+.carrito-card {
     display: none;
     position: fixed;
     z-index: 50;
@@ -191,10 +208,10 @@ img {
     background-color: rgba(0, 0, 0, 0.4);
 }
 
-.carrito-catalogo{
+.carrito-catalogo {
     position: absolute;
     top: 0;
-    right:0;
+    right: 0;
     background-color: #fefefe;
     width: 60rem;
     max-width: 80%;
@@ -204,50 +221,51 @@ img {
 }
 
 @keyframes animatetop {
-from {
-    right: -300px;
-    opacity: 0;
-}
+    from {
+        right: -300px;
+        opacity: 0;
+    }
 }
 
-.carrito-info{
+.carrito-info {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.carrito-info h1{
-    margin: 3rem ;
+.carrito-info h1 {
+    margin: 3rem;
 }
 
-.carrito-info i{
+.carrito-info i {
     cursor: pointer;
     font-size: 3rem;
     margin: 0.5rem 3rem 0 0;
 }
-.carrito-info i:hover{
+
+.carrito-info i:hover {
     color: var(--secundario);
 }
 
-.contenedor-producto{
+.contenedor-producto {
     display: grid;
     grid-template-columns: 20% 80%;
     align-content: center;
     margin: 2rem;
 }
 
-.contenido-descripcion{
+.contenido-descripcion {
     display: grid;
     grid-template-columns: 90% 10%;
 }
 
-.contenido-parrafo{
+.contenido-parrafo {
     display: flex;
     flex-direction: column;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
 }
 
-.boton{
+.boton {
     text-align: center;
     display: flex;
     align-items: center;
@@ -255,7 +273,7 @@ from {
 }
 
 
-.eliminar-producto{
+.eliminar-producto {
     font-weight: bold;
     font-size: 1.5rem;
     border-radius: 15px;
@@ -265,87 +283,111 @@ from {
     margin: auto;
 }
 
-.eliminar-producto:hover{
+.eliminar-producto:hover {
     color: var(--secundario);
     border: 1px var(--secundario) solid;
 }
 
-.ventana-footer{
-    background-color: var(--verde) ;
+.ventana-footer {
+    background-color: var(--verde);
 }
 
-#total{
+#total {
     text-align: center;
     font-size: 2rem;
     padding: 1rem;
 }
 
-.banner img{
+.ventana-finalizar {
+    margin: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.vaciar-compra,
+.realizar-compra {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: var(--fuenteHeading);
+    border: 5px var(--primario) solid;
+    padding: 1.5rem;
+}
+
+.vaciar-compra:hover,
+.realizar-compra:hover {
+    cursor: pointer;
+    background-color: var(--primario);
+    color: var(--blanco);
+}
+
+.banner img {
     margin-top: 7rem;
     width: 100%;
 }
 
 
-.productos-home{
+.productos-home {
     display: grid;
     gap: 2rem;
     margin: 2rem;
 }
 
-.card{
+.card {
     display: flex;
     align-items: center;
     flex-direction: column;
     text-align: center;
     border-radius: 5px;
     transition: .2s all ease-in;
-    box-shadow: 0px 0px 4px 1px rgba(181,159,181,1);
+    box-shadow: 0px 0px 4px 1px rgba(181, 159, 181, 1);
     margin: 1rem;
 }
 
-.card:hover{
+.card:hover {
     transform: scale(1.1);
 }
 
-.card h4{
+.card h4 {
     display: flex;
     align-items: center;
     height: 10rem;
     margin: 0px 1rem;
 }
 
-.card p{
+.card p {
     font-size: 2rem;
     font-weight: bold;
 }
 
 @media (min-width: 460px) {
-    .productos-home{
-        grid-template-columns: repeat(2 ,1fr);
+    .productos-home {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (min-width: 768px) {
-    .productos-home{
-        grid-template-columns: repeat(4 ,1fr);
+    .productos-home {
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 
 
 /* Section Camisetas */
 
-.banner-camiseta, .banner-botines{
+.banner-camiseta,
+.banner-botines {
     height: 60rem;
     width: 100%;
     background-repeat: no-repeat;
     background-position: top;
-    background-size:cover ;
+    background-size: cover;
 }
-.banner-camiseta{
+
+.banner-camiseta {
     background-image: url(../img/camiseta-adidas-river-plate-2022-23-h.jpg);
 }
 
-.banner-botines{
+.banner-botines {
     background-image: url(../img/2EVOFQOBBFEIFKT7NH5FIMFXM4.jpg);
     background-position: center;
 }
@@ -356,39 +398,50 @@ from {
     text-align: center;
     padding: 2rem;
     color: #fff;
-  }
-  .footer__iconos i {
+}
+
+.footer__iconos i {
     padding: 1rem;
     color: #fff;
     font-size: 3rem;
     transition: all 0.2s ease;
-  }
-  .footer__iconos i:hover {
+}
+
+.footer__iconos i:hover {
     color: var(--secundario);
-  }
-  
-  .footer__contacto {
+}
+
+.footer__contacto {
     display: flex;
     justify-content: center;
-  }
-  .footer__contacto a {
+}
+
+.footer__contacto a {
     color: #fff;
-  }
-  .footer__contacto a:hover {
+}
+
+.footer__contacto a:hover {
     color: #838181;
-  }
-  
-  .footer__contacto span {
+}
+
+.footer__contacto span {
     color: #fff;
     margin: 0 1rem;
-  }
-  
-  .footer__copy {
+}
+
+.footer__copy {
     margin: 1rem;
-  }
-  
-  .borde {
+}
+
+.borde {
     border-bottom: 1px solid #838181;
     padding: 1rem;
-  }
-  
+}
+
+.swal2-popup {
+    font-size: 1.5rem;
+}
+
+.swal2-actions button {
+    font-size: 1.2rem;
+}
